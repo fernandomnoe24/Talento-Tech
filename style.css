@@ -19,6 +19,36 @@ main {
     flex: 1; 
 }
 /*-------*/
+header {
+    background-color: rgb(42, 42, 42);
+    color: #ffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+header h1 {
+    padding-left: 1em;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.2em;
+    padding-right: 1em;
+}
+nav ul a {
+    color: #ffff;
+    text-decoration: none;
+    padding: 0.2em;
+    border: solid 1px red;
+    padding: 0.3em;
+    
+}
+
+
+
 
 footer {
     background-color: rgb(42, 42, 42);
