@@ -47,7 +47,11 @@ nav ul a {
     
 }
 
-
+main {
+    width: 1280px;
+    margin: auto;
+    padding: auto;
+}
 
 
 footer {
