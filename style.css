@@ -52,13 +52,30 @@ main {
     margin: auto;
     padding: auto;
 }
+
+#sobremi{
+    max-width: 1280px;
+    color: #ffff;
+    background-color: rgb(42, 42, 42);
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+#sobremi > img {
+    width: 350px;
+}
+#sobremi > p{
+    width: 860px;
+}
+
 #proyectos {
     max-width: 1280px;
     display: flex;
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
-    margin-bottom: 3em;
+    margin: 3em 0;
 }
 .card-container {
     display: flex;
@@ -73,7 +90,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: center;
 }
 .cards > img {
     width: 250px;
@@ -87,6 +104,7 @@ main {
     background-color: red;
     color: #ffff;
     padding: 0.5em;
+    margin-top: 2em;
     text-decoration: none;
 }
 #contacto {
