@@ -68,6 +68,17 @@ main {
 #sobremi > p{
     width: 860px;
 }
+.contenedor-sobremi {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+}
+#sobremi > div > div > img {
+    width: 350px;
+    padding: 1em;
+}
 
 #proyectos {
     max-width: 1280px;
@@ -116,6 +127,7 @@ main {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
 }
 form {
     color: #ffff;
