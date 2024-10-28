@@ -48,11 +48,78 @@ nav ul a {
 }
 
 main {
-    width: 1280px;
+    max-width: 1280px;
     margin: auto;
     padding: auto;
 }
-
+#proyectos {
+    max-width: 1280px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 3em;
+}
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.cards {
+    
+    width: 350px;
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.cards > img {
+    width: 250px;
+    margin: auto;
+    padding: auto;
+}
+.cards > h3 {
+    padding: 1em;
+}
+.button {
+    background-color: red;
+    color: #ffff;
+    padding: 0.5em;
+    text-decoration: none;
+}
+#contacto {
+    background-color: rgb(42, 42, 42);
+    padding-top: 2em;
+    color: #ffff;
+    max-width: 1280px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+form {
+    color: #ffff;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+label {
+    padding-top: 1em ;
+}
+input, textarea{
+    width: 560px;
+    padding: 1em;
+}
+button{
+    width: 256px;
+    padding: 1em;
+    margin-top: 1em;
+}
 
 footer {
     background-color: rgb(42, 42, 42);
