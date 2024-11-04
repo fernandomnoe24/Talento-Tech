@@ -41,10 +41,7 @@ nav ul{
 nav ul a {
     color: #ffff;
     text-decoration: none;
-    padding: 0.2em;
-    border: solid 1px red;
-    padding: 0.3em;
-    
+    padding: 1em 0.5em;   
 }
 
 main {
@@ -56,24 +53,29 @@ main {
 #sobremi{
     max-width: 1280px;
     color: #ffff;
-    background-color: rgb(42, 42, 42);
     margin-top: 2em;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 }
-#sobremi > img {
+#sobremi > div > img {
     width: 350px;
+}
+#sobremi > div {
+    background-color: rgb(42, 42, 42);
+    padding: 1em;
+    margin: 1em;
 }
 #sobremi > p{
     width: 860px;
 }
+
 .contenedor-sobremi {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
-
+    background-color: rgb(42, 42, 42);
 }
 #sobremi > div > div > img {
     width: 350px;
