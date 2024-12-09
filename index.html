@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link id="thema" rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="modal.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="#">LOGO</a></div>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <div class="menu-2">
+            <nav class="menu">
+                <a href="#">Inicio</a>
+                <a href="#sobremi">Sobre Mi</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+            <div class="sec-thema">
+                <a id="thema-button" onclick="CambiarHojaDeEstilos()">🌞</a>
+            </div>
+        </div>
+    </header>
+    
+
+    <main>
+        <section class="sobre-mi">
+            <h1 id="sobremi">Sobre mí</h1>
+            <div class="sobre-mi-content">
+                <div class="image">
+                    <img src="./Recursos/Img-Perfil.jpg" class="mi-imagen" alt="Img-1">
+                </div>
+                <p>
+                Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum. </br>
+                Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum. </br>  
+                Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum. </br> 
+                Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum. </br>    
+                Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum. 
+                </p>
+            </div>
+        </section>
+
+        <section class="educacion-herramientas">
+            <div class="educacion">
+                <div class="educacion-content">
+                    <h2 id="educacion">Educación</h2>
+                    <div class="divs1">
+                    <img src="./img.jpg"  class="mi-imagen" width="20%" alt="Img-1">
+                        <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum.Lorem ipsum lorem Lorem ipsum lorem ipsum lorem ipsum lorem ipsum. ipsum lorem ipsum Lorem ipsum lorem ipsum lorem ipsum lorem ipsum.</p>
+
+                    </div>
+                    <div class="divs2">
+                        <img src="./img.jpg" class="mi-imagen" width="20%" alt="Img-2">
+                            <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum.Lorem ipsum lorem Lorem ipsum lorem ipsum lorem ipsum lorem ipsum. ipsum lorem ipsum Lorem ipsum lorem ipsum lorem ipsum lorem ipsum.</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="herramientas">
+                <h2>Herramientas</h2>
+                <div class="skill">
+                    <span>HTML</span>
+                    <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+                </div>
+                <div class="skill">
+                    <span>CSS</span>
+                    <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+                </div>
+                <div class="skill">
+                    <span>JS</span>
+                    <div class="progress-bar"><div class="progress" style="width: 73%;"></div></div>
+                </div>
+                <div class="skill">
+                    <span>NodeJs</span>
+                    <div class="progress-bar"><div class="progress" style="width: 50%;"></div></div>
+                </div>
+                <div class="skill">
+                    <span>SQL</span>
+                    <div class="progress-bar"><div class="progress" style="width: 65%;"></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!--Ventana Modal-->
+        <div id="modal" class="modal">
+            <span class="cerrar" id="cerrarModal">&times;</span>
+            <img class="modal-contenido" id="imagenModalGrande">
+            <div id="caption" class="caption"></div>
+        </div>
+    
+        <section class="proyectos">
+            <h2 id="proyectos">Proyectos</h2>
+            <div class="proyectos-content">
+                <div class="card">
+                    <a href="https://www.bomberosra.org.ar/link-in-bio" target="_blank"><img src="./img.jpg" width="70%"  alt="Img-1"></a>
+                    <h3>Proyecto-1</h3>
+                    <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum.</p>
+                    <!-- <p>Landing site Link-in-bio created for BomberosRA</p> -->
+                    <a href="https://www.bomberosra.org.ar/link-in-bio" target="_blank" class="botones">Load More</a>
+                </div>
+                <div class="card">
+                    <a href="#" target="_blank"><img src="./img.jpg" width="70%" alt="Img-1"></a>
+                    <h3>Proyecto-2</h3>
+                    <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum.</p>
+                    <a href="https://www.bomberosra.org.ar/link-in-bio" target="_blank" class="botones">Load More</a>
+                </div>
+                <div class="card">
+                    <a href="https://www.bomberosra.org.ar/link-in-bio" target="_blank"><img src="./img.jpg" width="70%"  alt="Img-1"></a>
+                    <h3>Proyecto-3</h3>
+                    <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum.</p>
+                    <a href="https://www.bomberosra.org.ar/link-in-bio" target="_blank" class="botones">Load More</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="contacto">
+            <h2 id="contacto">Contacto</h2>
+            <form action="https://formspree.io/f/xzzbojol" method="POST">
+                <input type="text" name="text" placeholder="Nombre" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="tel" name="tel" placeholder="Tel" required>
+                <textarea placeholder="Mensaje" name="message" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Fernando Noé. All right Reserved.</p>
+        <ul class="lista-footer">
+            <li>
+                <a href="https://www.linkedin.com/in/fernando-matias-noe" target="_blank">
+                    <img src="./Recursos/linkedin.png" alt="Linkedin" class="invert">
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/fernandomnoe24" target="_blank">
+                    <img src="./Recursos/github.png" alt="Github" class="invert">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/fer_noe24/?igsh=MXd5YTZkeGp2d3E4bg%3D%3D" target="_blank">
+                    <img src="./Recursos/instagram.png" alt="Instagram" class="invert">
+                </a>
+            </li>
+        </ul>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

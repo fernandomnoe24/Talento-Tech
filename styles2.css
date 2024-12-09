@@ -1,0 +1,393 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #fff;
+    color: #333333;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    padding-top: 5rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0px 12px 15px 0px rgba(2, 2, 2, 0.22);
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+}
+
+header .menu a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+.logo a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-left: 2em;
+}
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #232323;
+    margin-right: 1em;
+}
+.menu-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.sec-thema {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    background-color: #333;
+    border-radius: 15px;
+    margin-left: 1em;
+    padding: 0.2em;
+}
+
+/* Sobre mí */
+.sobre-mi {
+    margin-top: 4rem;
+    margin-bottom: 10rem;
+}
+
+.sobre-mi-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+    margin: 3rem 0rem;
+}
+.sobre-mi h1 {
+    padding-left: 2em;
+}
+.sobre-mi .image {
+    max-width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.sobre-mi .image img {
+
+    max-width: 50%;
+    height: auto;
+}
+.sobre-mi-content p{
+    margin-top: 3em;
+}
+
+/* Educación y Herramientas */
+.educacion-herramientas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+.educacion > div > h2, .herramientas > h2 {
+    display: flex;
+    justify-content: center;
+    margin: 0.4em;
+}
+
+.educacion-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+.educacion-content, .herramientas {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+.divs1, .divs2 {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.divs2{
+    flex-direction: row-reverse;
+}
+.herramientas .skill {
+    margin-bottom: 1rem;
+    width: 80%;
+}
+
+.progress-bar {
+    background: #ddd;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.herramientas {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.progress {
+    height: 10px;
+    background: tomato;
+}
+
+/* Proyectos */
+.proyectos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.proyectos-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.proyectos > h2 {
+    display: flex;
+    justify-content: center;
+    margin: 3em 0em 1em 0em;
+}
+.card {
+    background: #fff;
+    flex: 1;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+
+}
+.botones {
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin: 1em;
+    padding: 0.3em;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+.botones:hover {
+    background: #555;
+}
+/* Contacto */
+.contacto {
+    max-width: 100%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.contacto input, .contacto textarea, .contacto button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    justify-content: center;
+}
+.contacto > h2 {
+    display: flex;
+    justify-content: center;
+    margin: 3em 0em 1em 0em;
+}
+.contacto input {
+    width: 680px;
+}
+.contacto textarea {
+    width: 680px;
+}
+
+.contacto button {
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 68px;
+}
+
+.contacto button:hover {
+    background: #555;
+}
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0px -10px 24px 0px rgba(59, 59, 59, 0.24);
+}
+.lista-footer {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    padding-top: 0.5em;
+}
+.lista-footer > li {
+    display: flex;
+    
+    list-style-type: none;
+}
+.lista-footer > li > a {
+    text-decoration: none;
+}
+.lista-footer > li > a > img {
+   max-width: 2em;
+}
+
+#thema-button{
+    font-size: 1em;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 768px) {
+    header {
+        
+        align-items: center;
+    }
+
+    .menu-toggle {
+        display: block; 
+    }
+    header .menu a {
+        display: flex;
+        justify-content: center;
+    }
+    .menu-2 {
+        display: none; 
+        position: absolute; 
+        top: 100%; 
+        left: 0;
+        width: 100%; 
+        background-color: #fff; 
+        z-index: 10;
+    }
+
+    .menu-2.open {
+        display: flex;
+        flex-direction: column; 
+        justify-items: center;
+        box-shadow: 0px 12px 15px 0px rgba(2, 2, 2, 0.22);
+    }
+
+    .menu-2 a {
+        display: block; 
+        padding: 1rem; 
+        text-align: left; 
+        color: #232323; 
+        text-decoration: none; 
+    }
+    #thema-button {
+        padding:0.2em;
+    }
+    .sec-thema {
+        margin-bottom: 1em;
+        margin-left: 0;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .logo a {
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1em;
+        margin-left: 1.2em;
+    }
+    .sobre-mi {
+        margin-top: 4rem;
+        margin-bottom: 6rem;
+    }
+    .sobre-mi-content {
+        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } 
+    .sobre-mi-content > p {
+        margin-top: 8rem;
+    }
+
+    .educacion-herramientas {
+        grid-template-columns: 1fr;
+    }
+
+    .proyectos {
+        max-width: 80%;
+    }
+
+    .proyectos-content {
+        flex-direction: column;
+    }
+
+    #contacto {
+        margin: 1em 0em 1em 0em;
+    }
+    .contacto input {
+        max-width: 80%;
+    }
+    .contacto textarea {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 560px) {
+    .main {
+        padding-top: 5rem;
+    }
+    .sobre-mi {
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }
+    .sobre-mi-content > p {
+        margin-top: 2rem;
+    }
+    .contacto {
+        margin-top: 2em;
+    }
+    #contacto {
+        margin: 1.5em 0em 1em 0em;
+    }
+    .contacto input {
+        max-width: 70%;
+    }
+    .contacto textarea {
+        max-width: 70%;
+    }
+}
