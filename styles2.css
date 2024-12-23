@@ -97,6 +97,10 @@ header .menu a {
     max-width: 50%;
     height: auto;
 }
+.mi-imagen {
+    border-radius: 50%;
+
+}
 .sobre-mi-content p{
     margin-top: 3em;
 }
@@ -166,6 +170,10 @@ header .menu a {
     display: flex;
     justify-content: space-between;
     gap: 1rem;
+}
+.Img-proyectos{
+    border-radius: 5%;
+    
 }
 .proyectos > h2 {
     display: flex;
