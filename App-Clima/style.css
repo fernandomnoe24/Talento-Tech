@@ -4,7 +4,8 @@
 }
 
 body {
-    background-color: #8abce6;
+    background: rgb(34,195,144);
+    background: linear-gradient(30deg, rgba(34,195,144,1) 0%, rgba(253,180,45,1) 100%);
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -14,7 +15,8 @@ body {
 }
 
 .wheater-content {
-    background-color: #1b4b8a;
+    background: rgb(20, 226, 160);
+    background: linear-gradient(30deg, rgb(20, 234, 166) 0%, rgb(250, 173, 29) 100%);
     border-radius: 10%;
     padding: 3em;
     font-size: 1.3em;

@@ -177,6 +177,11 @@ header .menu a {
     justify-content: center;
     margin: 3em 0em 1em 0em;
 }
+.Img-proyectos{
+    border-radius: 5%;
+    
+}
+
 .card {
     background: #232323;
     flex: 1;
